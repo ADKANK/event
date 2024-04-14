@@ -3,7 +3,7 @@ import RegistrationForm from "../components/RegistrationForm";
 
 const Registration = () => {
     return (
-        <RegistrationForm route="/api/user/register/" method="register" />
+        <RegistrationForm route="http://localhost:8000/api/user/register/" method="register" />
     );
 }
 

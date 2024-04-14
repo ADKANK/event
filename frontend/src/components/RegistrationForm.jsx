@@ -19,7 +19,7 @@ const RegistrationForm = ({ route, method }) => {
     const navigate = useNavigate();
     const validationSchema = Yup.object().shape({
         email: Yup.string()
-            .email('Invalid email format') 
+            .email('Invalid email format')
             .required('Email is required')
             .matches(/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/, 'Invalid email format'),
         password: Yup.string()

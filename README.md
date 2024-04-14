@@ -12,7 +12,7 @@ This project is a web application for managing events. It allows users to create
 ## Installation
 1. Clone the repository: `git clone <repository-url>`
 2. Navigate to the backend directory and install dependencies: `cd backend` then `pip install -r requirements.txt`
-3. Create a `.env` file inside the frontend directory with `REACT_APP_API_URL=http://127.0.0.1:8000`
+3. Create a `.env` file inside the frontend directory with `REACT_APP_API_URL="http://127.0.0.1:8000"`
 4. Install frontend dependencies: ` cd .\frontend\ then `npm install`
 
 ## Usage

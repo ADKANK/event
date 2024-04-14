@@ -35,5 +35,3 @@ This project is a web application for managing events. It allows users to create
 ![alt text](https://github.com/ADKANK/event/blob/master/Screenshots/login.png?raw=true)
 ![alt text](https://github.com/ADKANK/event/blob/master/Screenshots/posts_page.png?raw=true)
 ![alt text](https://github.com/ADKANK/event/blob/master/Screenshots/register.png?raw=true)
-
-Test Users

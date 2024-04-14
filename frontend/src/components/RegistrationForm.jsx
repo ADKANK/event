@@ -7,6 +7,7 @@ import { ACCESS_TOKEN, REFRESH_TOKEN } from '../constants';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/RegistrationForm.css' // Import your custom styles here
+import { Link } from 'react-router-dom';
 
 const RegistrationForm = ({ route, method }) => {
     const initialValues = {
@@ -107,9 +108,16 @@ const RegistrationForm = ({ route, method }) => {
                             <Field type="password" name="password" className="form-control" />
                             <ErrorMessage name="password" component="div" className="error-message" />
                         </div>
-                        <button type="submit" className="btn" disabled={isSubmitting}>
-                            {isSubmitting ? 'Submitting...' : `${name}`}
-                        </button>
+                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <button type="submit" className="btn" disabled={isSubmitting}>
+                                {isSubmitting ? 'Submitting...' : `${name}`}
+                            </button>
+                            {method === 'login' ? (
+                                <Link to="/register" style={{ display: 'flex', flexDirection: 'row' }}>Don't have an account? Sign Up Now</Link>
+                            ) : (
+                                <Link to="/login" >Already have an account? Login</Link>
+                            )}
+                        </div>
                     </Form>
                 )}
             </Formik>

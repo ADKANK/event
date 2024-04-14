@@ -1,0 +1,84 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set container height to full viewport height */
+}
+
+.create-form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+    /* Ensure it's above other content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    /* Set a maximum width for better readability */
+}
+
+.create-button {
+    background-color: #007bff;
+    /* Blue color */
+    color: #fff;
+    /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-button:hover {
+    background-color: #0056b3;
+    /* Darker shade of blue on hover */
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50%;
+    /* Set card width to half of the container */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.post-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.post-image {
+    width: 50%;
+    height: 150%;
+    object-fit: cover;
+    border-radius: 8px;
+}
